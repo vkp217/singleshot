@@ -2,10 +2,6 @@ function [tpsfs1, tpsfs2, rratio, SStau] = hfd5ToSingleShotTau(fname,tau_range_l
 %HFD5TOSINGLESHOTTAU Summary of this function goes here
 %%%%%%% written by Vikas Pandey,Ph.D.July 2024
 
-addpath('D:\MATLAB\Matlab files _ Vi\SwissSPAD3')
-addpath('D:\MATLAB\Matlab files _ Vi\single_shot')
-addpath('D:\MATLAB\Matlab files _ Vi\General')
-
 % fname = 'E:\Vikas\04262024datacollection\af700all\af700 - Copy (43)\Af700_740bp49_0242.hdf5';
 t0 = 0;
 % step = 0.1;
