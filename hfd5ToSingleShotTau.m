@@ -8,8 +8,9 @@ t0 = 0;
 % tau_range = [300, 3000];
 % gate_width = 3;
 % gate_num = 41;
+% gate_std = 61;
 [tau, ratio] = ssLUT(t0, tau_step_lut, tau_range_lut); % making the LUT
 [tpsfs1, ~, tpsfs2, ~] = ss3readHDF5File2(fname);
-[rratio, SStau] = ssLifetime_calculator(tpsfs1,tpsfs2,gate_width, gate_num, ratio, tau, tau_step_lut);
+[rratio, SStau] = ssLifetime_calculator(tpsfs1,tpsfs2,gate_width, gate_num, gate_std, ratio, tau, tau_step_lut);
 end
 
